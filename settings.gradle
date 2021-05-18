@@ -1,0 +1,3 @@
+include ':microservices:cust-service'
+include ':microservices:prod-service'
+include ':microservices:svc-service'
