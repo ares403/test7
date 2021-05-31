@@ -41,17 +41,17 @@ public class SvcService {
     }
 
     @Transactional(readOnly = true)
-    public SvcResponseDto findById(Long id) {
-        Svc entity = svcRepository.findById(id)
-                .orElseThrow(() -> new IllegalArgumentException("해당 사용자가 없습니다. id=" + id));
+    public SvcResponseDto findBySvcmgmtnum(Long svcmgmtnum) {
+        Svc entity = svcRepository.findById(svcmgmtnum)
+                .orElseThrow(() -> new IllegalArgumentException("해당 사용자가 없습니다. id=" + svcmgmtnum));
 
         return new SvcResponseDto(entity);
     }
 
-    @Transactional(readOnly = true)
-    public List<SvcListResponseDto> findAllDesc() {
-        return svcRepository.findAllDesc().stream()
-                .map(SvcListResponseDto::new)
-                .collect(Collectors.toList());
-    }
+//    @Transactional(readOnly = true)
+//    public List<SvcListResponseDto> findAllDesc() {
+//        return svcRepository.findAllDesc().stream()
+//                .map(SvcListResponseDto::new)
+//                .collect(Collectors.toList());
+//    }
 }

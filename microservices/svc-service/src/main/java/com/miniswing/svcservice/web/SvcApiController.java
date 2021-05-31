@@ -28,9 +28,9 @@ public class SvcApiController {
         svcService.delete(id);
     }
 
-    @GetMapping("/api/v1/svc/{id}")
-    public SvcResponseDto findById(@PathVariable Long id) {
-        return svcService.findById(id);
+    @GetMapping("/api/v1/svc/{svcmgmtnum}")
+    public SvcResponseDto findBySvcmgmtnum(@PathVariable Long svcmgmtnum) {
+        return svcService.findBySvcmgmtnum(svcmgmtnum);
     }
 
 
