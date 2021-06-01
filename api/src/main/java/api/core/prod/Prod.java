@@ -28,4 +28,5 @@ public class Prod {
     public String getCoclcd(){
         return coclcd;
     }
+
 }
