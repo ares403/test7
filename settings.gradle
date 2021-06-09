@@ -1,9 +1,6 @@
-include ':util'
 include ':microservices:cust-service'
 include ':microservices:prod-service'
 include ':microservices:svc-service'
-include 'util'
-include 'api'
-include 'microservices:composite-service'
-findProject(':microservices:composite-service')?.name = 'composite-service'
-
+include ':util'
+include ':api'
+include ':microservices:composite-service'

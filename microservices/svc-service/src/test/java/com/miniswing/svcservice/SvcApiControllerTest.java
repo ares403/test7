@@ -1,8 +1,6 @@
 package com.miniswing.svcservice;
 
-import com.miniswing.svcservice.domain.Svc;
-import com.miniswing.svcservice.domain.SvcRepository;
-import com.miniswing.svcservice.web.dto.SvcSaveRequestDto;
+
 import org.junit.After;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,22 +24,22 @@ public class SvcApiControllerTest {
 //
 //    @Autowired
 //    private TestRestTemplate restTemplate;
-
-    @Autowired
-    private SvcRepository svcRepository;
-
-    @After
-    public void tearDown() throws Exception{
-        //svcRepository.deleteAll();
-    }
-
-    @Test
-    public void Svc_upload() throws Exception{
-        SvcSaveRequestDto requestDto = SvcSaveRequestDto.builder()
-                .svcmgmtnum(7100000007L)
-                .feeprodid("스탠다드")
-                .custnum("01020828962")
-                .build();
+//
+//    @Autowired
+//    private SvcRepository svcRepository;
+//
+//    @After
+//    public void tearDown() throws Exception{
+//        //svcRepository.deleteAll();
+//    }
+//
+//    @Test
+//    public void Svc_upload() throws Exception{
+//        SvcSaveRequestDto requestDto = SvcSaveRequestDto.builder()
+//                .svcmgmtnum(7100000007L)
+//                .feeprodid("스탠다드")
+//                .custnum("01020828962")
+//                .build();
 
 //        String url = "http://localhost:" + port + "/api/v1/svc";
 //
@@ -52,7 +50,7 @@ public class SvcApiControllerTest {
 //        List<Svc> all = svcRepository.findAll();
 //        assertThat(all.get(0).getSvcmgmtnum()).isEqualTo(7100000007L);
 //        assertThat(all.get(0).getCustnum()).isEqualTo("01020828962");
-    }
+//    }
 
 //    @Test
 //    public void Svc_update() throws Exception{

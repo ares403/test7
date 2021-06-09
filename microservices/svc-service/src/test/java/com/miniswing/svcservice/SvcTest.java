@@ -1,7 +1,5 @@
 package com.miniswing.svcservice;
 
-import com.miniswing.svcservice.domain.Svc;
-import com.miniswing.svcservice.domain.SvcRepository;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,21 +15,21 @@ import static org.assertj.core.api.Assertions.assertThat;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class SvcTest {
-    @Autowired
-    SvcRepository svcRepository;
-
-    @Test
-    public void 안녕(){
-        svcRepository.save(Svc.builder()
-                .svcmgmtnum(7100000007L)
-                .feeprodid("스탠다드5G")
-                .custnum("01020828962")
-                .build());
-
-        List<Svc> svcList = svcRepository.findAll();
-        Svc svc = svcList.get(0);
-        assertThat(svc.getSvcmgmtnum()).isEqualTo(7100000007L);
-    }
+//    @Autowired
+//    SvcRepository svcRepository;
+//
+//    @Test
+//    public void 안녕(){
+//        svcRepository.save(Svc.builder()
+//                .svcmgmtnum(7100000007L)
+//                .feeprodid("스탠다드5G")
+//                .custnum("01020828962")
+//                .build());
+//
+//        List<Svc> svcList = svcRepository.findAll();
+//        Svc svc = svcList.get(0);
+//        assertThat(svc.getSvcmgmtnum()).isEqualTo(7100000007L);
+//    }
 
 //    //    @Transactional
 //    @org.junit.Test

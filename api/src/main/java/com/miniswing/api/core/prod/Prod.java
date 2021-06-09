@@ -1,4 +1,4 @@
-package api.core.prod;
+package com.miniswing.api.core.prod;
 
 public class Prod {
     private final String prodid;

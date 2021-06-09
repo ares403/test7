@@ -1,4 +1,4 @@
-package api.core.svc;
+package com.miniswing.api.core.svc;
 
 public class Svc {
     private final Long svcmgmtnum;

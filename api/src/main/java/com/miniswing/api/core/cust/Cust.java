@@ -1,4 +1,4 @@
-package api.core.cust;
+package com.miniswing.api.core.cust;
 
 public class Cust {
     private final String custnum;
